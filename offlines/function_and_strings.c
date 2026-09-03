@@ -244,6 +244,7 @@ int word_guess()
     printf("\nStarting Word Guess Challenge ...");
     printf("\nHint : ");
     int i= 0,correct= 0,choice, substr_utility = 0, length_utility =0;
+    int attempts = 0;
     int guess_L = stringlength(guesses[GUESS_INDEX]);
     while(i < guess_L)
     {
@@ -258,7 +259,7 @@ int word_guess()
         i++;
     }
     printf("\nSelect an option : 1. Write Answer 2. Check Substring 3. Check Length\n");
-    while(correct == 0 )
+    while(correct == 0 && attempts <=3)
     {
         scanf("%d",&choice);
         scanf("%*c");
@@ -266,7 +267,6 @@ int word_guess()
         {
         case 1:
         {
-            int attempts = 0;
             while(attempts<3 && correct ==0)
             {
                 int i = 0;
