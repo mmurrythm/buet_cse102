@@ -13,7 +13,7 @@ Input format
 Single line containing three space separated integers: x, y, z respectively.
 Output format
 Single line containing x, y, z separated by spaces.
-
+## Solution
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -100,6 +100,9 @@ Worked example
 ### Instructions
 1. a, b, out must be dynamically allocated
 2. All allocated memory must be freed before the program exits
+
+## Solution
+
 ```c
 #include<stdio.h>
 #include<stdlib.h>
